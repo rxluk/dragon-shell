@@ -30,7 +30,7 @@
     <meta property="og:type" content="website" />
 {{- end -}}
 
-    <link rel="alternate" type="application/rss+xml" href="{{ `/index.xml` | absLangURL }}">
+    <link rel="alternate" type="application/rss+xml" href="{{ `/index.xml` | relLangURL }}">
     {{/*  <link rel="alternate" type="application/json" href="">  */}}
     <meta property="og:locale" content="{{ .Language.LanguageCode }}" />
 {{- range .Translations }}

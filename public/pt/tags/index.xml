@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 🛡️ Dragon Shell</title>
-    <link>http://localhost:1313/dragon-shell/pt/tags/</link>
+    <link>http://localhost:1314/dragon-shell/pt/tags/</link>
     <description>Recent content in Tags on 🛡️ Dragon Shell</description>
     <generator>Hugo</generator>
     <language>pt</language>
     <lastBuildDate>Sun, 26 Jan 2025 20:44:58 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/dragon-shell/pt/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1314/dragon-shell/pt/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Archives</title>
-      <link>http://localhost:1313/dragon-shell/pt/tags/archives/</link>
+      <link>http://localhost:1314/dragon-shell/pt/tags/archives/</link>
       <pubDate>Sun, 26 Jan 2025 20:44:58 +0800</pubDate>
-      <guid>http://localhost:1313/dragon-shell/pt/tags/archives/</guid>
+      <guid>http://localhost:1314/dragon-shell/pt/tags/archives/</guid>
       <description></description>
     </item>
     <item>
       <title>Avatar</title>
-      <link>http://localhost:1313/dragon-shell/pt/tags/avatar/</link>
+      <link>http://localhost:1314/dragon-shell/pt/tags/avatar/</link>
       <pubDate>Sat, 18 Jan 2025 13:34:56 +0800</pubDate>
-      <guid>http://localhost:1313/dragon-shell/pt/tags/avatar/</guid>
+      <guid>http://localhost:1314/dragon-shell/pt/tags/avatar/</guid>
       <description></description>
     </item>
     <item>
       <title>Cover</title>
-      <link>http://localhost:1313/dragon-shell/pt/tags/cover/</link>
+      <link>http://localhost:1314/dragon-shell/pt/tags/cover/</link>
       <pubDate>Sat, 18 Jan 2025 13:34:56 +0800</pubDate>
-      <guid>http://localhost:1313/dragon-shell/pt/tags/cover/</guid>
+      <guid>http://localhost:1314/dragon-shell/pt/tags/cover/</guid>
       <description></description>
     </item>
     <item>
       <title>Post</title>
-      <link>http://localhost:1313/dragon-shell/pt/tags/post/</link>
+      <link>http://localhost:1314/dragon-shell/pt/tags/post/</link>
       <pubDate>Sat, 18 Jan 2025 13:34:56 +0800</pubDate>
-      <guid>http://localhost:1313/dragon-shell/pt/tags/post/</guid>
+      <guid>http://localhost:1314/dragon-shell/pt/tags/post/</guid>
       <description></description>
     </item>
     <item>
       <title>Heroicons</title>
-      <link>http://localhost:1313/dragon-shell/pt/tags/heroicons/</link>
+      <link>http://localhost:1314/dragon-shell/pt/tags/heroicons/</link>
       <pubDate>Sat, 18 Jan 2025 13:24:23 +0800</pubDate>
-      <guid>http://localhost:1313/dragon-shell/pt/tags/heroicons/</guid>
+      <guid>http://localhost:1314/dragon-shell/pt/tags/heroicons/</guid>
       <description></description>
     </item>
     <item>
       <title>Icons</title>
-      <link>http://localhost:1313/dragon-shell/pt/tags/icons/</link>
+      <link>http://localhost:1314/dragon-shell/pt/tags/icons/</link>
       <pubDate>Sat, 18 Jan 2025 13:24:23 +0800</pubDate>
-      <guid>http://localhost:1313/dragon-shell/pt/tags/icons/</guid>
+      <guid>http://localhost:1314/dragon-shell/pt/tags/icons/</guid>
       <description></description>
     </item>
   </channel>

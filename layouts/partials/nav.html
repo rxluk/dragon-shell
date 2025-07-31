@@ -4,7 +4,7 @@
 
             <div class="flex items-center">
                 <h1 class="flex items-center">
-                    <a href="{{ "/" | absLangURL }}" class="flex items-center">
+                    <a href="{{ "/" | relLangURL }}" class="flex items-center">
                         {{ $logo := resources.GetMatch site.Params.logo }}
                         {{ if $logo }}
                             <img 
@@ -38,7 +38,7 @@
                             {{ $itemActive = true }}
                         {{ end }}
 
-                        <a href="{{ .URL | absLangURL }}" 
+                        <a href="{{ .URL | relLangURL }}" 
                             {{ with $itemActive }}
                                 class="menu-item active"
                             {{ else }}

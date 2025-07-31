@@ -29,7 +29,7 @@
         <ul class="mx-auto py-4 flex flex-col items-stretch justify-center gap-4">
             {{ range site.Menus.main }}
                 <li>
-                    <a href="{{ .URL | absLangURL }}" class="block button uppercase">{{ .Name }}</a>
+                    <a href="{{ .URL | relLangURL }}" class="block button uppercase">{{ .Name }}</a>
                 </li>
             {{ end }}
         </ul>

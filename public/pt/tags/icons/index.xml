@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Icons on 🛡️ Dragon Shell</title>
-    <link>http://localhost:1313/dragon-shell/pt/tags/icons/</link>
+    <link>http://localhost:1314/dragon-shell/pt/tags/icons/</link>
     <description>Recent content in Icons on 🛡️ Dragon Shell</description>
     <generator>Hugo</generator>
     <language>pt</language>
     <lastBuildDate>Sat, 18 Jan 2025 13:24:23 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/dragon-shell/pt/tags/icons/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1314/dragon-shell/pt/tags/icons/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>配置图标</title>
-      <link>http://localhost:1313/dragon-shell/pt/docs/icons/</link>
+      <link>http://localhost:1314/dragon-shell/pt/docs/icons/</link>
       <pubDate>Sat, 18 Jan 2025 13:24:23 +0800</pubDate>
-      <guid>http://localhost:1313/dragon-shell/pt/docs/icons/</guid>
-      <description>&lt;h2 id=&#34;icons&#34;&gt;Icons&lt;/h2&gt;&#xA;&lt;h2 id=&#34;图标&#34;&gt;图标&lt;/h2&gt;&#xA;&lt;p&gt;图标可以用在&lt;a href=&#34;http://localhost:1313/dragon-shell/docs/menu-config/&#34;&gt;导航栏菜单&lt;/a&gt;，或者&lt;a href=&#34;https://gohugo.io/content-management/taxonomies/&#34;&gt;分类页 / taxonomy pages&lt;/a&gt;。&lt;/p&gt;&#xA;&lt;p&gt;内置的图标存放于主题的 &lt;code&gt;assets/icons&lt;/code&gt; 目录下面，是 &lt;a href=&#34;https://heroicons.com/&#34;&gt;heroicons&lt;/a&gt; 的一部分。&lt;/p&gt;&#xA;&lt;h3 id=&#34;添加更多图标&#34;&gt;添加更多图标&lt;/h3&gt;&#xA;&lt;p&gt;你可以添加更多 svg 图标（不局限于 heroicons）到你的站点的 &lt;code&gt;assets/icons&lt;/code&gt; 目录下面，来扩展或者覆盖可用的图标。&lt;/p&gt;&#xA;&lt;p&gt;图标也可以放在 &lt;code&gt;assets/icons&lt;/code&gt; 下面的子文件夹中，例如，如果图标 &lt;code&gt;assets/icons/my-icons/my-icon.svg&lt;/code&gt; 存在，那么你可以使用 &lt;code&gt;my-icons/my-icon&lt;/code&gt; 来引用你的图标。&lt;/p&gt;&#xA;&lt;p&gt;查看 &lt;code&gt;partials/icon.html&lt;/code&gt; 了解更多。&lt;/p&gt;</description>
+      <guid>http://localhost:1314/dragon-shell/pt/docs/icons/</guid>
+      <description>&lt;h2 id=&#34;icons&#34;&gt;Icons&lt;/h2&gt;&#xA;&lt;h2 id=&#34;图标&#34;&gt;图标&lt;/h2&gt;&#xA;&lt;p&gt;图标可以用在&lt;a href=&#34;http://localhost:1314/dragon-shell/pt/docs/menu-config/&#34;&gt;导航栏菜单&lt;/a&gt;，或者&lt;a href=&#34;https://gohugo.io/content-management/taxonomies/&#34;&gt;分类页 / taxonomy pages&lt;/a&gt;。&lt;/p&gt;&#xA;&lt;p&gt;内置的图标存放于主题的 &lt;code&gt;assets/icons&lt;/code&gt; 目录下面，是 &lt;a href=&#34;https://heroicons.com/&#34;&gt;heroicons&lt;/a&gt; 的一部分。&lt;/p&gt;&#xA;&lt;h3 id=&#34;添加更多图标&#34;&gt;添加更多图标&lt;/h3&gt;&#xA;&lt;p&gt;你可以添加更多 svg 图标（不局限于 heroicons）到你的站点的 &lt;code&gt;assets/icons&lt;/code&gt; 目录下面，来扩展或者覆盖可用的图标。&lt;/p&gt;&#xA;&lt;p&gt;图标也可以放在 &lt;code&gt;assets/icons&lt;/code&gt; 下面的子文件夹中，例如，如果图标 &lt;code&gt;assets/icons/my-icons/my-icon.svg&lt;/code&gt; 存在，那么你可以使用 &lt;code&gt;my-icons/my-icon&lt;/code&gt; 来引用你的图标。&lt;/p&gt;&#xA;&lt;p&gt;查看 &lt;code&gt;partials/icon.html&lt;/code&gt; 了解更多。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
