@@ -18,7 +18,7 @@
         {{ partial "post-card.html" . }}
     {{ end }}
 
-    {{ partial "page-nav.html" .Paginator }}
+    {{ partial "page-nav.html" (dict "paginator" .Paginator "page" .) }}
 
 {{ end }}
 

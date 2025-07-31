@@ -50,7 +50,7 @@
         </article>
     {{ end }}
 
-    {{ partial "page-nav.html" $paginator }}
+    {{ partial "page-nav.html" (dict "paginator" $paginator "page" .) }}
 
 {{ end }}
 

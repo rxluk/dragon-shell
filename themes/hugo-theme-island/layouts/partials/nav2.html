@@ -29,7 +29,17 @@
         <ul class="mx-auto py-4 flex flex-col items-stretch justify-center gap-4">
             {{ range site.Menus.main }}
                 <li>
-                    <a href="{{ .URL | relLangURL }}" class="block button uppercase">{{ .Name }}</a>
+                    {{- if hasPrefix .URL "http" -}}
+                        {{- /* Link externo */ -}}
+                        <a href="{{ .URL }}" class="block button uppercase">{{ .Name }}</a>
+                    {{- else -}}
+                        {{- /* Link interno */ -}}
+                        {{- if eq $.Language.Lang "en" -}}
+                            <a href="/dragon-shell{{ .URL }}" class="block button uppercase">{{ .Name }}</a>
+                        {{- else -}}
+                            <a href="/dragon-shell/pt{{ .URL }}" class="block button uppercase">{{ .Name }}</a>
+                        {{- end -}}
+                    {{- end -}}
                 </li>
             {{ end }}
         </ul>

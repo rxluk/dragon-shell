@@ -1,1 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>About on 🛡️ Dragon Shell</title><link>https://rxluk.github.io/dragon-shell/about/</link><description>Recent content in About on 🛡️ Dragon Shell</description><generator>Hugo</generator><language>en</language><lastBuildDate/><atom:link href="https://rxluk.github.io/dragon-shell/about/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on 🛡️ Dragon Shell</title>
+    <link>https://rxluk.github.io:1313/dragon-shell/about/</link>
+    <description>Recent content in About on 🛡️ Dragon Shell</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://rxluk.github.io:1313/dragon-shell/about/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

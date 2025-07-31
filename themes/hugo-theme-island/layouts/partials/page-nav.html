@@ -1,8 +1,17 @@
-{{ if gt .TotalPages 1 }}
+{{ $paginator := .paginator }}
+{{ $page := .page }}
+
+{{ if gt $paginator.TotalPages 1 }}
 
     <nav class="grid grid-cols-2 gap-4 mb-4">
-        {{ with .Prev }}
-            <a href="{{ .URL }}" class="button flex items-center justify-start gap-1">
+        {{ with $paginator.Prev }}
+            {{- $prevURL := "" -}}
+            {{- if eq $page.Language.Lang "en" -}} // Acessa o idioma da página passada
+                {{- $prevURL = printf "/dragon-shell%s" .URL -}}
+            {{- else -}}
+                {{- $prevURL = printf "/dragon-shell/pt%s" .URL -}}
+            {{- end -}}
+            <a href="{{ $prevURL }}" class="button flex items-center justify-start gap-1">
                 <i class="icon">
                     {{ partial "icon" "chevron-left" }}
                 </i>
@@ -10,24 +19,22 @@
             </a>
         {{ else }}
             <span class="button disabled"></span>
-            {{/*  <span class="button disabled flex items-center justify-start gap-1">
-                {{ partial "icon" "chevron-left" }}
-                <span class="">{{ i18n "page.prev" }}</span>
-            </span>  */}}
         {{ end }}
 
-        {{ with .Next }}
-            <a href="{{ .URL }}" class="button flex items-center justify-end">
+        {{ with $paginator.Next }}
+            {{- $nextURL := "" -}}
+            {{- if eq $page.Language.Lang "en" -}} // Acessa o idioma da página passada
+                {{- $nextURL = printf "/dragon-shell%s" .URL -}}
+            {{- else -}}
+                {{- $nextURL = printf "/dragon-shell/pt%s" .URL -}}
+            {{- end -}}
+            <a href="{{ $nextURL }}" class="button flex items-center justify-end">
                 <span class="">{{ "page.next" | i18n }}</span>
                 <i class="icon">
                     {{ partial "icon" "chevron-right" }}
                 </i>
             </a>
         {{ else }}
-            {{/*  <span class="button disabled flex items-center justify-end">
-                <span class="">{{ "page.next" | i18n }}</span>
-                {{ partial "icon" "chevron-right" }}
-            </span>  */}}
             <span class="button disabled"></span>
         {{ end }}
     </nav>

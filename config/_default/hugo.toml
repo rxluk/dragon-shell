@@ -13,15 +13,17 @@ defaultContentLanguageInSubdir = false
     languageName = "English"
     weight = 0
     title = "🛡️ Dragon Shell"
+    contentDir = "content"
     [languages.en.params]
       dateFormat = "Jan 02, 2006"
       description = "Insights and analyses on cybersecurity."
 
   [languages.pt]
     languageCode = "pt"
-    languageName = "Portuguese"
+    languageName = "Portuguese" 
     weight = 10
     title = "🛡️ Dragon Shell"
+    contentDir = "content"
     [languages.pt.params]
       dateFormat = "02/01/2006"
       description = "Análises e insights sobre cibersegurança."

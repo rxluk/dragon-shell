@@ -1,25 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bob on 🛡️ Dragon Shell</title><link>https://rxluk.github.io/dragon-shell/pt/u/bob/</link><description>Recent content in Bob on 🛡️ Dragon Shell</description><generator>Hugo</generator><language>pt</language><lastBuildDate>Sun, 26 Jan 2025 20:44:58 +0800</lastBuildDate><atom:link href="https://rxluk.github.io/dragon-shell/pt/u/bob/index.xml" rel="self" type="application/rss+xml"/><item><title>归档页面</title><link>https://rxluk.github.io/dragon-shell/pt/docs/archives/</link><pubDate>Sun, 26 Jan 2025 20:44:58 +0800</pubDate><guid>https://rxluk.github.io/dragon-shell/pt/docs/archives/</guid><description>&lt;p>你需要创建 &lt;code>content/archives/_index.md&lt;/code> 来启用归档页面。&lt;/p>
-&lt;div class="island mb-4 overflow-hidden not-prose">
- 
- &lt;pre tabindex="0">&lt;code>---
-title: &amp;#34;Archives&amp;#34;
-description: &amp;#34;...&amp;#34;
-draft: false
-icon: archive-box
-cover:
- image: cover.jpg
----&lt;/code>&lt;/pre>
-&lt;/div>
-&lt;p>如果你的 &lt;code>_index.md&lt;/code> 不在 &lt;code>content/archives/&lt;/code> 目录下面，那你可以给你的 &lt;code>_index.md&lt;/code> 的 frontmatter 添加 &lt;code>layout: archives&lt;/code> 来启用这一特性。&lt;/p>
-&lt;div class="island mb-4 overflow-hidden not-prose">
- 
- &lt;pre tabindex="0">&lt;code>---
-title: &amp;#34;Archives&amp;#34;
-description: &amp;#34;...&amp;#34;
-draft: false
-icon: archive-box
-cover:
- image: cover.jpg
-layout: archives
----&lt;/code>&lt;/pre>
-&lt;/div></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bob on 🛡️ Dragon Shell</title>
+    <link>https://rxluk.github.io:1313/dragon-shell/pt/u/bob/</link>
+    <description>Recent content in Bob on 🛡️ Dragon Shell</description>
+    <generator>Hugo</generator>
+    <language>pt</language>
+    <lastBuildDate>Sun, 26 Jan 2025 20:44:58 +0800</lastBuildDate>
+    <atom:link href="https://rxluk.github.io:1313/dragon-shell/pt/u/bob/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>归档页面</title>
+      <link>https://rxluk.github.io:1313/dragon-shell/pt/docs/archives/</link>
+      <pubDate>Sun, 26 Jan 2025 20:44:58 +0800</pubDate>
+      <guid>https://rxluk.github.io:1313/dragon-shell/pt/docs/archives/</guid>
+      <description>&lt;p&gt;你需要创建 &lt;code&gt;content/archives/_index.md&lt;/code&gt; 来启用归档页面。&lt;/p&gt;&#xA;&lt;div class=&#34;island mb-4 overflow-hidden not-prose&#34;&gt;&#xA;    &#xA;    &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;---&#xA;title: &amp;#34;Archives&amp;#34;&#xA;description: &amp;#34;...&amp;#34;&#xA;draft: false&#xA;icon: archive-box&#xA;cover:&#xA;    image: cover.jpg&#xA;---&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;如果你的 &lt;code&gt;_index.md&lt;/code&gt; 不在 &lt;code&gt;content/archives/&lt;/code&gt; 目录下面，那你可以给你的 &lt;code&gt;_index.md&lt;/code&gt; 的 frontmatter 添加 &lt;code&gt;layout: archives&lt;/code&gt; 来启用这一特性。&lt;/p&gt;&#xA;&lt;div class=&#34;island mb-4 overflow-hidden not-prose&#34;&gt;&#xA;    &#xA;    &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;---&#xA;title: &amp;#34;Archives&amp;#34;&#xA;description: &amp;#34;...&amp;#34;&#xA;draft: false&#xA;icon: archive-box&#xA;cover:&#xA;    image: cover.jpg&#xA;layout: archives&#xA;---&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>

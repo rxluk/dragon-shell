@@ -11,9 +11,16 @@
         <ul>
             {{ range .Translations }}
                 <li>
+                    {{- $translationURL := "" -}}
+                    {{- if eq .Language.Lang "en" -}}
+                        {{- $translationURL = printf "/dragon-shell%s" .RelPermalink -}}
+                    {{- else -}}
+                        {{- $translationURL = printf "/dragon-shell/%s%s" .Language.Lang .RelPermalink -}}
+                    {{- end -}}
+                    
                     <a 
                         class="flex items-center justify-between p-4 action"
-                        href="{{ .RelPermalink }}" 
+                        href="{{ $translationURL }}" 
                         hreflang="{{ .Language.LanguageCode }}">
                         <span>{{ .Title }}</span>
                         <span class="text-muted">
