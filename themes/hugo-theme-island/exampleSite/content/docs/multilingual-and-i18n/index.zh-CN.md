@@ -32,13 +32,13 @@ defaultContentLanguageInSubdir = false
     [languages.en.params]
       Logo = "demo-logo.png"
       DateFormat = "Oct 15, 2006"
-  [languages.zh-CN]
+  [languages.pt]
     disabled = false
-    languageCode = "zh-CN"
+    languageCode = "pt"
     languageName = "中文"
     title = "示例网站"
     weight = 10
-    [languages.zh-CN.params]
+    [languages.pt.params]
       Logo = "demo-logo.png"
     #   DateFormat = "2006-01-02"
 ```

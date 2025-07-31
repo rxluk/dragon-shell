@@ -5,5 +5,5 @@ title: '作者'
 slug: "u"
 icon: "user-circle"
 cover:
-    image: island-cover-authors-zh.png
+    image: island-cover-authors-pt.png
 ---

@@ -29,10 +29,10 @@ logo = "example-logo.png"
 ``` toml
 # hugo.toml
 [languages]
-  [languages.zh-cn]
-    languageCode = "zh-cn"
+  [languages.pt]
+    languageCode = "pt"
     languageName = "中文"
     title = "示例网站"
-    [languages.zh-cn.params]
+    [languages.pt.params]
       Logo = "example-logo.png" # 在这里添加你的 logo
 ```

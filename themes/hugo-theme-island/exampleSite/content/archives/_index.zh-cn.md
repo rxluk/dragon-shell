@@ -4,5 +4,5 @@ draft: false
 title: '归档'
 icon: "archive-box"
 cover:
-    image: island-cover-archives-zh.png
+    image: island-cover-archives-pt.png
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Tags"
-description: "So many tags"
+description: "All the tags"
 icon: "tag"
 cover:
     image: island-cover-tags-en.png

@@ -15,6 +15,61 @@
 
 {{ define "main" }}
 
+    {{ $aboutPage := site.GetPage (printf "about") }} 
+    {{ if not $aboutPage }}
+        {{ $aboutPage = site.GetPage (printf "%s/about" .Lang) }} 
+    {{ end }}
+    
+    {{ if $aboutPage }}
+        {{- with $aboutPage.Params.cover -}}
+            {{- if .image -}}
+                <div class="island mb-4">
+                    <img src="{{ .image | relURL }}" alt="{{ with .alt }}{{ . }}{{ else }}{{ $aboutPage.Title }}{{ end }}" class="w-full h-auto">
+                </div>
+            {{- end -}}
+        {{- end -}}
+
+        <header class="island mb-4">
+            <h2 class="text-2xl flex items-center justify-start gap-2">
+                {{- if $aboutPage.Params.icon -}}
+                    <i class="block size-6">
+                        {{- partial "icon" $aboutPage.Params.icon -}}
+                    </i>
+                {{- end -}}
+                <span>{{- $aboutPage.Title -}}</span>
+            </h2>
+        </header>
+
+        {{- with $aboutPage.Content -}}
+            <div class="island mb-4">
+                <div class="island-body content">
+                    {{ . }}
+                </div>
+            </div>
+        {{- end -}}
+    {{ else }}
+        {{- with .Title -}}
+            <header class="island mb-4">
+                <h2 class="text-2xl flex items-center justify-start gap-2">
+                    {{- if .Params.icon -}}
+                        <i class="block size-6">
+                            {{- partial "icon" .Params.icon -}}
+                        </i>
+                    {{- end -}}
+                    <span>{{- .Title -}}</span>
+                </h2>
+            </header>
+        {{- end -}}
+
+        {{- with .Content -}}
+            <div class="island mb-4">
+                <div class="island-body content">
+                    {{ . }}
+                </div>
+            </div>
+        {{- end -}}
+    {{ end }}
+
     {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
     {{ $paginator := .Paginate $pages.ByDate.Reverse }}
 

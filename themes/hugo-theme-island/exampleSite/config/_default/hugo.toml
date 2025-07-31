@@ -56,14 +56,14 @@ summaryLength = 128
       logo = "demo-logo.png"
       dateFormat = "Jan 02"
       description = "demo site of hugo-theme-island"
-  [languages.zh-CN]
+  [languages.pt]
     disabled = false
-    languageCode = "zh-CN"
+    languageCode = "pt"
     # languageDirection = ""
     languageName = "中文"
     title = "示例网站"
     weight = 10
-    [languages.zh-CN.params]
+    [languages.pt.params]
       logo = "demo-logo.png"
       dateFormat = "01-02"
       description = "hugo-theme-island 主题示例以及文档"
