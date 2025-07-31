@@ -26,7 +26,7 @@
 
         {{ with .Params.description }}
             <div class="island-body text-muted">
-                {{ . }}
+                {{ . | markdownify }}
             </div>
         {{ end }}
     </div>

@@ -18,7 +18,7 @@ defaultContentLanguage = "en"
 
   [languages.pt]
     languageCode = "pt"
-    languageName = "Portuguese (Brazil)"
+    languageName = "Portuguese"
     weight = 10
     title = "🛡️ Dragon Shell"
     [languages.pt.params]
