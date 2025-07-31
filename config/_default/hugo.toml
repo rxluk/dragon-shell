@@ -1,4 +1,4 @@
-baseURL = 'https://rxluk.github.io/'
+baseURL = 'https://rxluk.github.io/dragon-shell/'
 languageCode = 'en-us'
 title = '🛡️ Dragon Shell'
 theme = 'hugo-theme-island'

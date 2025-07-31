@@ -5,13 +5,9 @@
 
     <nav class="grid grid-cols-2 gap-4 mb-4">
         {{ with $paginator.Prev }}
-            {{- $prevURL := "" -}}
-            {{- if eq $page.Language.Lang "en" -}} // Acessa o idioma da página passada
-                {{- $prevURL = printf "/dragon-shell%s" .URL -}}
-            {{- else -}}
-                {{- $prevURL = printf "/dragon-shell/pt%s" .URL -}}
-            {{- end -}}
-            <a href="{{ $prevURL }}" class="button flex items-center justify-start gap-1">
+            <a 
+                href="{{ .URL | absLangURL }}"
+                class="button flex items-center justify-start gap-1">
                 <i class="icon">
                     {{ partial "icon" "chevron-left" }}
                 </i>
@@ -22,13 +18,9 @@
         {{ end }}
 
         {{ with $paginator.Next }}
-            {{- $nextURL := "" -}}
-            {{- if eq $page.Language.Lang "en" -}} // Acessa o idioma da página passada
-                {{- $nextURL = printf "/dragon-shell%s" .URL -}}
-            {{- else -}}
-                {{- $nextURL = printf "/dragon-shell/pt%s" .URL -}}
-            {{- end -}}
-            <a href="{{ $nextURL }}" class="button flex items-center justify-end">
+            <a 
+                href="{{ .URL | absLangURL }}"
+                class="button flex items-center justify-end">
                 <span class="">{{ "page.next" | i18n }}</span>
                 <i class="icon">
                     {{ partial "icon" "chevron-right" }}

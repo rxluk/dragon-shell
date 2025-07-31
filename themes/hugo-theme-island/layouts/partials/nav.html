@@ -4,11 +4,12 @@
 
             <div class="flex items-center">
                 <h1 class="flex items-center">
-                    {{- if eq .Language.Lang "en" -}}
-                        <a href="/dragon-shell/" class="flex items-center">
+                    {{/*  {{- if eq .Language.Lang "en" -}}
+                        <a href="/" class="flex items-center">
                     {{- else -}}
-                        <a href="/dragon-shell/pt/" class="flex items-center">
-                    {{- end -}}
+                        <a href="/pt/" class="flex items-center">
+                    {{- end -}}  */}}
+                    <a href="{{ .Site.Home.RelPermalink }}" class="flex items-center">
                         {{ $logo := resources.GetMatch site.Params.logo }}
                         {{ if $logo }}
                             <img 
@@ -48,9 +49,9 @@
                         {{- else -}}
                             {{- /* Link interno */ -}}
                             {{- if eq $currentPage.Language.Lang "en" -}}
-                                <a href="/dragon-shell{{ .URL }}" 
+                                <a href="{{ .URL }}" 
                             {{- else -}}
-                                <a href="/dragon-shell/pt{{ .URL }}" 
+                                <a href="{{ .URL }}" 
                             {{- end -}}
                         {{- end -}}
                             {{ with $itemActive }}

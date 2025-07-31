@@ -27,21 +27,17 @@
     </div>
     <div class="grid grid-cols-2 p-4 gap-2">
         <ul class="mx-auto py-4 flex flex-col items-stretch justify-center gap-4">
-            {{ range site.Menus.main }}
-                <li>
-                    {{- if hasPrefix .URL "http" -}}
-                        {{- /* Link externo */ -}}
-                        <a href="{{ .URL }}" class="block button uppercase">{{ .Name }}</a>
-                    {{- else -}}
-                        {{- /* Link interno */ -}}
-                        {{- if eq $.Language.Lang "en" -}}
-                            <a href="/dragon-shell{{ .URL }}" class="block button uppercase">{{ .Name }}</a>
-                        {{- else -}}
-                            <a href="/dragon-shell/pt{{ .URL }}" class="block button uppercase">{{ .Name }}</a>
-                        {{- end -}}
-                    {{- end -}}
-                </li>
-            {{ end }}
+        {{ range site.Menus.main }}
+            <li>
+            {{- if hasPrefix .URL "http" -}}
+                <!-- Link externo -->
+                <a href="{{ .URL }}" class="block button uppercase">{{ .Name }}</a>
+            {{- else -}}
+                <!-- Link interno -->
+                <a href="{{ .URL | absLangURL }}" class="block button uppercase">{{ .Name }}</a>
+            {{- end }}
+            </li>
+        {{ end }}
         </ul>
         {{- partial "translations.html" . }}
     </div>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on 🛡️ Dragon Shell</title><link>https://rxluk.github.io/dragon-shell/categories/docs/</link><description>Recent content in Docs on 🛡️ Dragon Shell</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 26 Jan 2025 20:44:58 +0800</lastBuildDate><atom:link href="https://rxluk.github.io/dragon-shell/categories/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Archives Page</title><link>https://rxluk.github.io/dragon-shell/docs/archives/</link><pubDate>Sun, 26 Jan 2025 20:44:58 +0800</pubDate><guid>https://rxluk.github.io/dragon-shell/docs/archives/</guid><description>&lt;p>You will need to create &lt;code>content/archives/_index.md&lt;/code> to enable the archives page.&lt;/p>
+&lt;div class="island mb-4 overflow-hidden not-prose">
+ 
+ &lt;pre tabindex="0">&lt;code>---
+title: &amp;#34;Archives&amp;#34;
+description: &amp;#34;...&amp;#34;
+draft: false
+icon: archive-box
+cover:
+ image: cover.jpg
+---&lt;/code>&lt;/pre>
+&lt;/div>
+&lt;p>Or, if your file are not at &lt;code>content/archives/&lt;/code>, you can add &lt;code>layout: archives&lt;/code> in your markdown&amp;rsquo;s frontmatter.&lt;/p>
+&lt;div class="island mb-4 overflow-hidden not-prose">
+ 
+ &lt;pre tabindex="0">&lt;code>---
+title: &amp;#34;Archives&amp;#34;
+description: &amp;#34;...&amp;#34;
+draft: false
+icon: archive-box
+cover:
+ image: cover.jpg
+layout: archives
+---&lt;/code>&lt;/pre>
+&lt;/div></description></item><item><title>How to install theme</title><link>https://rxluk.github.io/dragon-shell/docs/install/</link><pubDate>Thu, 23 Jan 2025 19:58:29 +0800</pubDate><guid>https://rxluk.github.io/dragon-shell/docs/install/</guid><description>&lt;h2 id="install-the-theme">Install The Theme&lt;/h2>
+&lt;h3 id="using-git-submodules">Using Git Submodules&lt;/h3>
+&lt;p>The recommanded method to install &lt;a href="https://github.com/bin16/hugo-theme-island" title="Hugo Theme Island">the theme&lt;/a> is using &lt;a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules" title="Git Tools - Submodules">git submodules&lt;/a>.&lt;/p>
+&lt;p>For the first time installing the theme, run the following command in your site&amp;rsquo;s directory.&lt;/p>
+&lt;div class="island mb-4 overflow-hidden not-prose">
+ 
+ &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">git submodule add https://github.com/bin16/hugo-theme-island themes/hugo-theme-island&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;/div>
+&lt;p>And also remember to edit your &lt;a href="https://gohugo.io/getting-started/configuration/#configuration-file" title="Hugo Configuration File">configuration file&lt;/a> to add the theme.&lt;/p>
+&lt;p>After committed and push you site, when you want to clone the project somewhere else, just run&lt;/p>
+&lt;div class="island mb-4 overflow-hidden not-prose">
+ 
+ &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">git clone --recurse-submodules https://repo-of-your-site&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;/div>
+&lt;p>Or, may be you have already cloned the repo without the &lt;code>--recurse-submodules&lt;/code> flag, just run:&lt;/p>
+&lt;div class="island mb-4 overflow-hidden not-prose">
+ 
+ &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">git submodule update --init --recursive&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;/div>
+&lt;h3 id="using-hugo-modules">Using Hugo Modules&lt;/h3>
+&lt;p>You can also install theme with &lt;a href="https://gohugo.io/hugo-modules/" title="Hugo Modules">Hugo Modules&lt;/a>.&lt;/p>
+&lt;p>See: &lt;a href="https://gohugo.io/hugo-modules/use-modules/#use-a-module-for-a-theme" title="Hugo Install Theme Using Hugo Module">https://gohugo.io/hugo-modules/use-modules/#use-a-module-for-a-theme&lt;/a>&lt;/p></description></item><item><title>Multi Author</title><link>https://rxluk.github.io/dragon-shell/docs/multi-author/</link><pubDate>Sat, 18 Jan 2025 21:34:09 +0800</pubDate><guid>https://rxluk.github.io/dragon-shell/docs/multi-author/</guid><description>&lt;h2 id="enable-multi-author-feature">Enable multi-author feature&lt;/h2>
+&lt;p>Multi-author feature is based on Hugo&amp;rsquo;s taxonomies, authors is one kind of taxonomy. To enable the feature, you need to edit your hugo.toml, add &lt;code>author = &amp;quot;authors&amp;quot;&lt;/code> in the &lt;code>[Taxonomies]&lt;/code> section.&lt;/p>
+&lt;div class="island mb-4 overflow-hidden not-prose">
+ 
+ &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-toml" data-lang="toml">&lt;span class="line">&lt;span class="cl">&lt;span class="c"># hugo.toml&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">[&lt;/span>&lt;span class="nx">Taxonomies&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">tag&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;tags&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">category&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;categories&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">author&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;authors&amp;#34;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;/div>
+&lt;h3 id="avatars">Avatars&lt;/h3>
+&lt;div class="island mb-4 overflow-hidden not-prose">
+ 
+ &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yml" data-lang="yml">&lt;span class="line">&lt;span class="cl">&lt;span class="c"># content/authors/EXAMPLE/_index.md&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">title&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34;Example Author&amp;#34;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">avatar&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">one-avatar.png&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">alt&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">...&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">cover&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">background.png&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">alt&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">...&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;/div>
+&lt;p>You can check &lt;a href="https://gohugo.io/content-management/taxonomies/" title="Taxonomies">Taxonomies&lt;/a> to get more information.&lt;/p></description></item><item><title>Main Sections</title><link>https://rxluk.github.io/dragon-shell/docs/mainsections/</link><pubDate>Sat, 18 Jan 2025 13:43:45 +0800</pubDate><guid>https://rxluk.github.io/dragon-shell/docs/mainsections/</guid><description>&lt;p>Only &lt;a href="https://gohugo.io/methods/site/mainsections/" title="mainSections - Hugo">main sections&lt;/a> are displayed on home page, please check &lt;a href="https://gohugo.io/methods/site/mainsections/" title="mainSections - Hugo">Hugo&amp;rsquo;s document, mainSections&lt;/a> to get more information.&lt;/p>
+&lt;div class="island mb-4 overflow-hidden not-prose">
+ 
+ &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-toml" data-lang="toml">&lt;span class="line">&lt;span class="cl">&lt;span class="c"># hugo.toml&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">mainSections&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;posts&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;docs&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;/div></description></item><item><title>Multilingual Mode and i18n</title><link>https://rxluk.github.io/dragon-shell/docs/multilingual-and-i18n/</link><pubDate>Sat, 18 Jan 2025 13:40:31 +0800</pubDate><guid>https://rxluk.github.io/dragon-shell/docs/multilingual-and-i18n/</guid><description>&lt;h2 id="multilingual">Multilingual&lt;/h2>
+&lt;div class="island mb-4 overflow-hidden not-prose">
+ 
+ &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-toml" data-lang="toml">&lt;span class="line">&lt;span class="cl">&lt;span class="c"># hugo.toml&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">defaultContentLanguage&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;en&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">defaultContentLanguageInSubdir&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="kc">false&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">[&lt;/span>&lt;span class="nx">languages&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nx">languages&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">en&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">disabled&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="kc">false&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">languageCode&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;en&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">languageName&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;English&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">weight&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="mi">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">title&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;ExampleSite&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nx">languages&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">en&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">params&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">Logo&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;demo-logo.png&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">DateFormat&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;Oct 15, 2006&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nx">languages&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">zh-CN&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">disabled&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="kc">false&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">languageCode&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;zh-CN&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">languageName&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;中文&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">title&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;示例网站&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">weight&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="mi">10&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nx">languages&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">zh-CN&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">params&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">Logo&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;demo-logo.png&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c"># DateFormat = &amp;#34;2006-01-02&amp;#34;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;/div>
+&lt;p>Reference: &lt;a href="https://gohugo.io/content-management/multilingual/">https://gohugo.io/content-management/multilingual/&lt;/a>&lt;/p>
+&lt;h3 id="dateformat">DateFormat&lt;/h3>
+&lt;div class="island mb-4 overflow-hidden not-prose">
+ 
+ &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-toml" data-lang="toml">&lt;span class="line">&lt;span class="cl">&lt;span class="c"># hugo.toml&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">[&lt;/span>&lt;span class="nx">params&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">DateFormat&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;2006-01-02&amp;#34;&lt;/span> &lt;span class="c"># [01]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">[&lt;/span>&lt;span class="nx">languages&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nx">languages&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">en&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c"># ...&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="nx">languages&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">en&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">params&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">DateFormat&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;Oct 15, 2006&amp;#34;&lt;/span> &lt;span class="c"># [02]&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;/div>
+&lt;p>[02] DateFormat in language params is looked up first, and if not exist, [01] &lt;code>DateFormat&lt;/code> in site params is looked up next.&lt;/p>
+&lt;p>About date format layout, see: &lt;a href="https://gohugo.io/functions/time/format/#layout-string">https://gohugo.io/functions/time/format/#layout-string&lt;/a>&lt;/p>
+&lt;h3 id="add-your-own-translations--use-translation-table">Add your own translations / Use translation table&lt;/h3>
+&lt;p>Add your &lt;code>SOME-LANGUAGE-CODE.yml&lt;/code>， in your site&amp;rsquo;s &lt;code>i18n/&lt;/code> directory, check &lt;a href="https://gohugo.io/content-management/multilingual/#use-translation-tables" title="Use translation tables">Use translation tables&lt;/a> to get more information.&lt;/p></description></item><item><title>Cover Images</title><link>https://rxluk.github.io/dragon-shell/docs/cover-images/</link><pubDate>Sat, 18 Jan 2025 13:34:56 +0800</pubDate><guid>https://rxluk.github.io/dragon-shell/docs/cover-images/</guid><description>&lt;h2 id="add-cover-image">Add cover image&lt;/h2>
+&lt;div class="island mb-4 overflow-hidden not-prose">
+ 
+ &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nn">---&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">title&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34;your-post-title&amp;#34;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="c"># ...&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">cover&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">example.jpg&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">alt&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">xxx&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># Optional&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nn">---&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;/div>
+&lt;h3 id="for-author-add-avatar-image">For author, add avatar image&lt;/h3>
+&lt;div class="island mb-4 overflow-hidden not-prose">
+ 
+ &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nn">---&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">title&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34;author-name&amp;#34;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="c"># ...&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">avatar&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">example-avatar.jpg&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">alt&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Example Avatar&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">cover&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">example-background.jpg&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">alt&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Example Background Image&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;/div></description></item><item><title>Icons</title><link>https://rxluk.github.io/dragon-shell/docs/icons/</link><pubDate>Sat, 18 Jan 2025 13:24:23 +0800</pubDate><guid>https://rxluk.github.io/dragon-shell/docs/icons/</guid><description>&lt;h2 id="icons">Icons&lt;/h2>
+&lt;p>Icons can be used in &lt;a href="https://rxluk.github.io/dragon-shell/docs/menu-config/">the main menu (menu in navigation bar)&lt;/a>, or taxonomy pages.&lt;/p>
+&lt;p>The built-in icons listed under &lt;code>assets/icons&lt;/code> directory, are partial of &lt;a href="https://heroicons.com/">heroicons&lt;/a>.&lt;/p>
+&lt;h3 id="add-more-icons">Add more icons&lt;/h3>
+&lt;p>You can add more svg icons (not limited in heroicons) to your site&amp;rsquo;s &lt;code>assets/icons&lt;/code> directory to extend or override icons.&lt;/p>
+&lt;p>Icons can be in sub directory under &lt;code>assets/icons&lt;/code>, for example, if you have my-icon.svg under assets/icons/my-icons/, you can reference that icon with name &amp;ldquo;my-icons/my-icon&amp;rdquo;.&lt;/p>
+&lt;p>Check &lt;code>partials/icon.html&lt;/code> to get more information.&lt;/p></description></item><item><title>Menu Config</title><link>https://rxluk.github.io/dragon-shell/docs/menu-config/</link><pubDate>Sat, 18 Jan 2025 13:16:51 +0800</pubDate><guid>https://rxluk.github.io/dragon-shell/docs/menu-config/</guid><description>&lt;h2 id="main-menu">Main Menu&lt;/h2>
+&lt;p>The menu in navigation is managed in site configuration, you can check &lt;a href="https://gohugo.io/content-management/menus/#define-in-site-configuration" title="Define in site configuration">Define in site configuration&lt;/a> to get more information.&lt;/p>
+&lt;div class="island mb-4 overflow-hidden not-prose">
+ 
+ &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-toml" data-lang="toml">&lt;span class="line">&lt;span class="cl">&lt;span class="c"># hugo.toml&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c"># https://gohugo.io/getting-started/configuration/#configuration-file&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">[&lt;/span>&lt;span class="nx">menus&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[[&lt;/span>&lt;span class="nx">menus&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">main&lt;/span>&lt;span class="p">]]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">identifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;menu.home&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">name&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;Home&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">pageRef&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;/&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">weight&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="mi">10&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[[&lt;/span>&lt;span class="nx">menus&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">main&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">params&lt;/span>&lt;span class="p">]]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">icon&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;home&amp;#34;&lt;/span> &lt;span class="c"># assets/icons/home.svg&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c"># menu item with absolute path&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[[&lt;/span>&lt;span class="nx">menus&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">main&lt;/span>&lt;span class="p">]]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">identifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;menu.tags&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">name&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;Tags&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">pageRef&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;/tags&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">weight&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="mi">20&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[[&lt;/span>&lt;span class="nx">menus&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">main&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">params&lt;/span>&lt;span class="p">]]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">icon&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;tag&amp;#34;&lt;/span> &lt;span class="c"># assets/icons/tag.svg&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c"># menu item with full url&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[[&lt;/span>&lt;span class="nx">menus&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">main&lt;/span>&lt;span class="p">]]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">identifier&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;menu.repo&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">name&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;Github Repo&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">url&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;https://github.com/bin16/hugo-theme-island&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">weight&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="mi">30&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[[&lt;/span>&lt;span class="nx">menus&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">main&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">params&lt;/span>&lt;span class="p">]]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">target&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;_blank&amp;#34;&lt;/span> &lt;span class="c"># open page in new tab&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">icon&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;bs/github&amp;#34;&lt;/span> &lt;span class="c"># assets/icons/bs/github.svg&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;/div>
+&lt;h3 id="icons">Icons&lt;/h3>
+&lt;p>Icon in menu is totally optional, check &lt;strong>&lt;a href="https://rxluk.github.io/dragon-shell/doc/icons/">Icons&lt;/a>&lt;/strong> to get more information.&lt;/p>
+&lt;h2 id="language-specific-menus">Language-specific Menus&lt;/h2>
+&lt;p>See: &lt;a href="https://gohugo.io/content-management/multilingual/#create-language-specific-menu-entries" title="Create language-specific menu entries">Create language-specific menu entries&lt;/a>&lt;/p></description></item></channel></rss>
