@@ -1,19 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Heroicons on 🛡️ Dragon Shell</title>
-    <link>http://localhost:1313/dragon-shell/tags/heroicons/</link>
-    <description>Recent content in Heroicons on 🛡️ Dragon Shell</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 18 Jan 2025 13:24:23 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/dragon-shell/tags/heroicons/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Icons</title>
-      <link>http://localhost:1313/dragon-shell/docs/icons/</link>
-      <pubDate>Sat, 18 Jan 2025 13:24:23 +0800</pubDate>
-      <guid>http://localhost:1313/dragon-shell/docs/icons/</guid>
-      <description>&lt;h2 id=&#34;icons&#34;&gt;Icons&lt;/h2&gt;&#xA;&lt;p&gt;Icons can be used in &lt;a href=&#34;http://localhost:1313/dragon-shell/docs/menu-config/&#34;&gt;the main menu (menu in navigation bar)&lt;/a&gt;, or taxonomy pages.&lt;/p&gt;&#xA;&lt;p&gt;The built-in icons listed under &lt;code&gt;assets/icons&lt;/code&gt; directory, are partial of &lt;a href=&#34;https://heroicons.com/&#34;&gt;heroicons&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h3 id=&#34;add-more-icons&#34;&gt;Add more icons&lt;/h3&gt;&#xA;&lt;p&gt;You can add more svg icons (not limited in heroicons) to your site&amp;rsquo;s &lt;code&gt;assets/icons&lt;/code&gt; directory to extend or override icons.&lt;/p&gt;&#xA;&lt;p&gt;Icons can be in sub directory under &lt;code&gt;assets/icons&lt;/code&gt;, for example, if you have my-icon.svg under assets/icons/my-icons/, you can reference that icon with name &amp;ldquo;my-icons/my-icon&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;Check &lt;code&gt;partials/icon.html&lt;/code&gt; to get more information.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Heroicons on 🛡️ Dragon Shell</title><link>https://rxluk.github.io/dragon-shell/tags/heroicons/</link><description>Recent content in Heroicons on 🛡️ Dragon Shell</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 18 Jan 2025 13:24:23 +0800</lastBuildDate><atom:link href="https://rxluk.github.io/dragon-shell/tags/heroicons/index.xml" rel="self" type="application/rss+xml"/><item><title>Icons</title><link>https://rxluk.github.io/dragon-shell/docs/icons/</link><pubDate>Sat, 18 Jan 2025 13:24:23 +0800</pubDate><guid>https://rxluk.github.io/dragon-shell/docs/icons/</guid><description>&lt;h2 id="icons">Icons&lt;/h2>
+&lt;p>Icons can be used in &lt;a href="https://rxluk.github.io/dragon-shell/docs/menu-config/">the main menu (menu in navigation bar)&lt;/a>, or taxonomy pages.&lt;/p>
+&lt;p>The built-in icons listed under &lt;code>assets/icons&lt;/code> directory, are partial of &lt;a href="https://heroicons.com/">heroicons&lt;/a>.&lt;/p>
+&lt;h3 id="add-more-icons">Add more icons&lt;/h3>
+&lt;p>You can add more svg icons (not limited in heroicons) to your site&amp;rsquo;s &lt;code>assets/icons&lt;/code> directory to extend or override icons.&lt;/p>
+&lt;p>Icons can be in sub directory under &lt;code>assets/icons&lt;/code>, for example, if you have my-icon.svg under assets/icons/my-icons/, you can reference that icon with name &amp;ldquo;my-icons/my-icon&amp;rdquo;.&lt;/p>
+&lt;p>Check &lt;code>partials/icon.html&lt;/code> to get more information.&lt;/p></description></item></channel></rss>

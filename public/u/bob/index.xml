@@ -1,47 +1,71 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Bob on 🛡️ Dragon Shell</title>
-    <link>http://localhost:1313/dragon-shell/u/bob/</link>
-    <description>Recent content in Bob on 🛡️ Dragon Shell</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 26 Jan 2025 20:44:58 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/dragon-shell/u/bob/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Archives Page</title>
-      <link>http://localhost:1313/dragon-shell/docs/archives/</link>
-      <pubDate>Sun, 26 Jan 2025 20:44:58 +0800</pubDate>
-      <guid>http://localhost:1313/dragon-shell/docs/archives/</guid>
-      <description>&lt;p&gt;You will need to create &lt;code&gt;content/archives/_index.md&lt;/code&gt; to enable the archives page.&lt;/p&gt;&#xA;&lt;div class=&#34;island mb-4 overflow-hidden not-prose&#34;&gt;&#xA;    &#xA;    &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;---&#xA;title: &amp;#34;Archives&amp;#34;&#xA;description: &amp;#34;...&amp;#34;&#xA;draft: false&#xA;icon: archive-box&#xA;cover:&#xA;    image: cover.jpg&#xA;---&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;Or, if your file are not at &lt;code&gt;content/archives/&lt;/code&gt;, you can add &lt;code&gt;layout: archives&lt;/code&gt; in your markdown&amp;rsquo;s frontmatter.&lt;/p&gt;&#xA;&lt;div class=&#34;island mb-4 overflow-hidden not-prose&#34;&gt;&#xA;    &#xA;    &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;---&#xA;title: &amp;#34;Archives&amp;#34;&#xA;description: &amp;#34;...&amp;#34;&#xA;draft: false&#xA;icon: archive-box&#xA;cover:&#xA;    image: cover.jpg&#xA;layout: archives&#xA;---&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title>Multi Author</title>
-      <link>http://localhost:1313/dragon-shell/docs/multi-author/</link>
-      <pubDate>Sat, 18 Jan 2025 21:34:09 +0800</pubDate>
-      <guid>http://localhost:1313/dragon-shell/docs/multi-author/</guid>
-      <description>&lt;h2 id=&#34;enable-multi-author-feature&#34;&gt;Enable multi-author feature&lt;/h2&gt;&#xA;&lt;p&gt;Multi-author feature is based on Hugo&amp;rsquo;s taxonomies, authors is one kind of taxonomy. To enable the feature, you need to edit your hugo.toml, add &lt;code&gt;author = &amp;quot;authors&amp;quot;&lt;/code&gt; in the &lt;code&gt;[Taxonomies]&lt;/code&gt; section.&lt;/p&gt;&#xA;&lt;div class=&#34;island mb-4 overflow-hidden not-prose&#34;&gt;&#xA;    &#xA;    &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# hugo.toml&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;Taxonomies&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;tag&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;tags&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;category&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;categories&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;author&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;authors&amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;h3 id=&#34;avatars&#34;&gt;Avatars&lt;/h3&gt;&#xA;&lt;div class=&#34;island mb-4 overflow-hidden not-prose&#34;&gt;&#xA;    &#xA;    &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yml&#34; data-lang=&#34;yml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# content/authors/EXAMPLE/_index.md&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Example Author&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;avatar&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;one-avatar.png&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;alt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;...&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;cover&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;background.png&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;alt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;...&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;You can check &lt;a href=&#34;https://gohugo.io/content-management/taxonomies/&#34; title=&#34;Taxonomies&#34;&gt;Taxonomies&lt;/a&gt; to get more information.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Main Sections</title>
-      <link>http://localhost:1313/dragon-shell/docs/mainsections/</link>
-      <pubDate>Sat, 18 Jan 2025 13:43:45 +0800</pubDate>
-      <guid>http://localhost:1313/dragon-shell/docs/mainsections/</guid>
-      <description>&lt;p&gt;Only &lt;a href=&#34;https://gohugo.io/methods/site/mainsections/&#34; title=&#34;mainSections - Hugo&#34;&gt;main sections&lt;/a&gt; are displayed on home page, please check &lt;a href=&#34;https://gohugo.io/methods/site/mainsections/&#34; title=&#34;mainSections - Hugo&#34;&gt;Hugo&amp;rsquo;s document, mainSections&lt;/a&gt; to get more information.&lt;/p&gt;&#xA;&lt;div class=&#34;island mb-4 overflow-hidden not-prose&#34;&gt;&#xA;    &#xA;    &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# hugo.toml&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;mainSections&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;posts&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;docs&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;/div&gt;</description>
-    </item>
-    <item>
-      <title>No Cover Post</title>
-      <link>http://localhost:1313/dragon-shell/post/demo/no-cover-post/</link>
-      <pubDate>Sat, 11 Jan 2025 13:55:26 +0800</pubDate>
-      <guid>http://localhost:1313/dragon-shell/post/demo/no-cover-post/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fringilla a arcu sed maximus. Duis aliquet ante dignissim tincidunt porttitor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam eu ligula a purus fermentum porta. Ut non tincidunt lectus. Praesent iaculis quis ex vitae fermentum. Aliquam quis gravida turpis, at euismod augue. Curabitur accumsan tempor felis, et tempor lorem feugiat ac. Quisque bibendum ipsum id massa pharetra hendrerit. Nullam commodo nisl neque, et sagittis justo varius id. Ut nec orci non risus facilisis imperdiet sit amet a quam. Nam lorem odio, tempor sit amet hendrerit non, dapibus sed purus. Aenean est lectus, accumsan et sagittis eget, fringilla viverra magna. Integer volutpat eu risus ac egestas.&lt;/p&gt;&#xA;&lt;p&gt;Donec vulputate dolor non massa condimentum, nec posuere justo malesuada. Maecenas vitae vehicula tortor. Maecenas porttitor facilisis neque sit amet fermentum. Quisque dictum tincidunt lacus, at iaculis risus fermentum sed. Vestibulum pellentesque, velit non vestibulum placerat, urna est tincidunt purus, id consequat ante tellus in massa. Vestibulum sit amet tincidunt neque, sed consequat eros. Aliquam euismod aliquet malesuada.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Hello World</title>
-      <link>http://localhost:1313/dragon-shell/post/demo/hello-world/</link>
-      <pubDate>Thu, 09 Jan 2025 21:16:28 +0800</pubDate>
-      <guid>http://localhost:1313/dragon-shell/post/demo/hello-world/</guid>
-      <description>&lt;h2 id=&#34;cras-consequat-leo-mauris&#34;&gt;Cras consequat leo mauris&lt;/h2&gt;&#xA;&#xA;    &lt;figure class=&#34;island text-base not-prose mb-4 alert-note&#34;&gt;&#xA;        &lt;div class=&#34;flex p-2 gap-2 md:p-4 md:gap-4 items-center&#34;&gt;&#xA;            &lt;i class=&#34;block size-6 md:size-10&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;1.5&#34; stroke=&#34;currentColor&#34; class=&#34;size-full&#34;&gt;&#xA;    &lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z&#34; /&gt;&#xA;&lt;/svg&gt;&#xA;&lt;/i&gt;&#xA;&#xA;            &lt;div class=&#34;flex-1 flex flex-col gap-2&#34;&gt;&#xA;                &#xA;                &lt;div&gt;&#xA;                    &lt;p&gt;Useful information that users should know, even when skimming content.&lt;/p&gt;&#xA;                &lt;/div&gt;&#xA;            &lt;/div&gt;&#xA;        &lt;/div&gt;&#xA;    &lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sagittis diam nec ex accumsan pharetra sed sit amet turpis. Proin at nunc commodo, mollis leo blandit, semper ex. Phasellus in tortor ut arcu scelerisque sodales. Vivamus eu lorem eget justo molestie pretium sit amet quis enim. Morbi sagittis urna leo, nec bibendum nisl ornare quis. In in suscipit neque, id dignissim urna. Duis lacus purus, feugiat et diam nec, ullamcorper pulvinar ex. Curabitur at suscipit purus. Maecenas consequat purus leo, nec aliquet lectus consectetur nec. Etiam ante dui, placerat non porttitor ac, viverra sed massa. Cras consequat leo mauris, quis vestibulum diam imperdiet ullamcorper. Vivamus vitae nunc lacus. Nunc ligula nibh, scelerisque eget rutrum non, mattis eu tellus. Sed id placerat mi, vel tincidunt arcu. Etiam dignissim malesuada urna sed ornare.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bob on 🛡️ Dragon Shell</title><link>https://rxluk.github.io/dragon-shell/u/bob/</link><description>Recent content in Bob on 🛡️ Dragon Shell</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 26 Jan 2025 20:44:58 +0800</lastBuildDate><atom:link href="https://rxluk.github.io/dragon-shell/u/bob/index.xml" rel="self" type="application/rss+xml"/><item><title>Archives Page</title><link>https://rxluk.github.io/dragon-shell/docs/archives/</link><pubDate>Sun, 26 Jan 2025 20:44:58 +0800</pubDate><guid>https://rxluk.github.io/dragon-shell/docs/archives/</guid><description>&lt;p>You will need to create &lt;code>content/archives/_index.md&lt;/code> to enable the archives page.&lt;/p>
+&lt;div class="island mb-4 overflow-hidden not-prose">
+ 
+ &lt;pre tabindex="0">&lt;code>---
+title: &amp;#34;Archives&amp;#34;
+description: &amp;#34;...&amp;#34;
+draft: false
+icon: archive-box
+cover:
+ image: cover.jpg
+---&lt;/code>&lt;/pre>
+&lt;/div>
+&lt;p>Or, if your file are not at &lt;code>content/archives/&lt;/code>, you can add &lt;code>layout: archives&lt;/code> in your markdown&amp;rsquo;s frontmatter.&lt;/p>
+&lt;div class="island mb-4 overflow-hidden not-prose">
+ 
+ &lt;pre tabindex="0">&lt;code>---
+title: &amp;#34;Archives&amp;#34;
+description: &amp;#34;...&amp;#34;
+draft: false
+icon: archive-box
+cover:
+ image: cover.jpg
+layout: archives
+---&lt;/code>&lt;/pre>
+&lt;/div></description></item><item><title>Multi Author</title><link>https://rxluk.github.io/dragon-shell/docs/multi-author/</link><pubDate>Sat, 18 Jan 2025 21:34:09 +0800</pubDate><guid>https://rxluk.github.io/dragon-shell/docs/multi-author/</guid><description>&lt;h2 id="enable-multi-author-feature">Enable multi-author feature&lt;/h2>
+&lt;p>Multi-author feature is based on Hugo&amp;rsquo;s taxonomies, authors is one kind of taxonomy. To enable the feature, you need to edit your hugo.toml, add &lt;code>author = &amp;quot;authors&amp;quot;&lt;/code> in the &lt;code>[Taxonomies]&lt;/code> section.&lt;/p>
+&lt;div class="island mb-4 overflow-hidden not-prose">
+ 
+ &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-toml" data-lang="toml">&lt;span class="line">&lt;span class="cl">&lt;span class="c"># hugo.toml&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">[&lt;/span>&lt;span class="nx">Taxonomies&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">tag&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;tags&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">category&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;categories&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">author&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;authors&amp;#34;&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;/div>
+&lt;h3 id="avatars">Avatars&lt;/h3>
+&lt;div class="island mb-4 overflow-hidden not-prose">
+ 
+ &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yml" data-lang="yml">&lt;span class="line">&lt;span class="cl">&lt;span class="c"># content/authors/EXAMPLE/_index.md&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">title&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34;Example Author&amp;#34;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">avatar&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">one-avatar.png&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">alt&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">...&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">cover&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">background.png&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">alt&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">...&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;/div>
+&lt;p>You can check &lt;a href="https://gohugo.io/content-management/taxonomies/" title="Taxonomies">Taxonomies&lt;/a> to get more information.&lt;/p></description></item><item><title>Main Sections</title><link>https://rxluk.github.io/dragon-shell/docs/mainsections/</link><pubDate>Sat, 18 Jan 2025 13:43:45 +0800</pubDate><guid>https://rxluk.github.io/dragon-shell/docs/mainsections/</guid><description>&lt;p>Only &lt;a href="https://gohugo.io/methods/site/mainsections/" title="mainSections - Hugo">main sections&lt;/a> are displayed on home page, please check &lt;a href="https://gohugo.io/methods/site/mainsections/" title="mainSections - Hugo">Hugo&amp;rsquo;s document, mainSections&lt;/a> to get more information.&lt;/p>
+&lt;div class="island mb-4 overflow-hidden not-prose">
+ 
+ &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-toml" data-lang="toml">&lt;span class="line">&lt;span class="cl">&lt;span class="c"># hugo.toml&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">mainSections&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;posts&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;docs&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+&lt;/div></description></item><item><title>No Cover Post</title><link>https://rxluk.github.io/dragon-shell/post/demo/no-cover-post/</link><pubDate>Sat, 11 Jan 2025 13:55:26 +0800</pubDate><guid>https://rxluk.github.io/dragon-shell/post/demo/no-cover-post/</guid><description>&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fringilla a arcu sed maximus. Duis aliquet ante dignissim tincidunt porttitor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam eu ligula a purus fermentum porta. Ut non tincidunt lectus. Praesent iaculis quis ex vitae fermentum. Aliquam quis gravida turpis, at euismod augue. Curabitur accumsan tempor felis, et tempor lorem feugiat ac. Quisque bibendum ipsum id massa pharetra hendrerit. Nullam commodo nisl neque, et sagittis justo varius id. Ut nec orci non risus facilisis imperdiet sit amet a quam. Nam lorem odio, tempor sit amet hendrerit non, dapibus sed purus. Aenean est lectus, accumsan et sagittis eget, fringilla viverra magna. Integer volutpat eu risus ac egestas.&lt;/p>
+&lt;p>Donec vulputate dolor non massa condimentum, nec posuere justo malesuada. Maecenas vitae vehicula tortor. Maecenas porttitor facilisis neque sit amet fermentum. Quisque dictum tincidunt lacus, at iaculis risus fermentum sed. Vestibulum pellentesque, velit non vestibulum placerat, urna est tincidunt purus, id consequat ante tellus in massa. Vestibulum sit amet tincidunt neque, sed consequat eros. Aliquam euismod aliquet malesuada.&lt;/p></description></item><item><title>Hello World</title><link>https://rxluk.github.io/dragon-shell/post/demo/hello-world/</link><pubDate>Thu, 09 Jan 2025 21:16:28 +0800</pubDate><guid>https://rxluk.github.io/dragon-shell/post/demo/hello-world/</guid><description>&lt;h2 id="cras-consequat-leo-mauris">Cras consequat leo mauris&lt;/h2>
+
+ &lt;figure class="island text-base not-prose mb-4 alert-note">
+ &lt;div class="flex p-2 gap-2 md:p-4 md:gap-4 items-center">
+ &lt;i class="block size-6 md:size-10">&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-full">
+ &lt;path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+&lt;/svg>
+&lt;/i>
+
+ &lt;div class="flex-1 flex flex-col gap-2">
+ 
+ &lt;div>
+ &lt;p>Useful information that users should know, even when skimming content.&lt;/p>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;/figure>
+
+&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sagittis diam nec ex accumsan pharetra sed sit amet turpis. Proin at nunc commodo, mollis leo blandit, semper ex. Phasellus in tortor ut arcu scelerisque sodales. Vivamus eu lorem eget justo molestie pretium sit amet quis enim. Morbi sagittis urna leo, nec bibendum nisl ornare quis. In in suscipit neque, id dignissim urna. Duis lacus purus, feugiat et diam nec, ullamcorper pulvinar ex. Curabitur at suscipit purus. Maecenas consequat purus leo, nec aliquet lectus consectetur nec. Etiam ante dui, placerat non porttitor ac, viverra sed massa. Cras consequat leo mauris, quis vestibulum diam imperdiet ullamcorper. Vivamus vitae nunc lacus. Nunc ligula nibh, scelerisque eget rutrum non, mattis eu tellus. Sed id placerat mi, vel tincidunt arcu. Etiam dignissim malesuada urna sed ornare.&lt;/p></description></item></channel></rss>
