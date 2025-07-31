@@ -42,5 +42,5 @@ description: |
 cover:
     image: pattern.png
 avatar:
-    image: alice-avatar.png
+    image: luk-avatar.png
 ---

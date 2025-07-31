@@ -15,6 +15,19 @@
                 href="http://localhost:1313/dragon-shell/pt/tags/archives/"
                 />
   </url><url>
+    <loc>http://localhost:1313/dragon-shell/pt/u/bob/</loc>
+    <lastmod>2025-01-26T20:44:58+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/dragon-shell/u/bob/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/dragon-shell/pt/u/bob/"
+                />
+  </url><url>
     <loc>http://localhost:1313/dragon-shell/pt/categories/</loc>
     <lastmod>2025-01-26T20:44:58+08:00</lastmod>
     <xhtml:link
@@ -184,33 +197,7 @@
                 href="http://localhost:1313/dragon-shell/pt/docs/icons/"
                 />
   </url><url>
-    <loc>http://localhost:1313/dragon-shell/pt/u/%E4%B9%99/</loc>
-    <lastmod>2025-01-10T15:17:47+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/dragon-shell/u/bob/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="http://localhost:1313/dragon-shell/pt/u/%E4%B9%99/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/dragon-shell/pt/u/%E7%94%B2/</loc>
-    <lastmod>2025-01-10T15:17:47+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/dragon-shell/u/alice/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="http://localhost:1313/dragon-shell/pt/u/%E7%94%B2/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/dragon-shell/pt/u/%E7%94%B2/</loc>
+    <loc>http://localhost:1313/dragon-shell/pt/u/luk/</loc>
     <lastmod>2025-01-10T15:17:47+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
@@ -220,7 +207,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="http://localhost:1313/dragon-shell/pt/u/%E7%94%B2/"
+                href="http://localhost:1313/dragon-shell/pt/u/luk/"
                 />
   </url><url>
     <loc>http://localhost:1313/dragon-shell/pt/authors/</loc>
