@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homepage on 🛡️ Dragon Shell</title>
+    <link>http://localhost:32779/tags/homepage/</link>
+    <description>Recent content in Homepage on 🛡️ Dragon Shell</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 18 Jan 2025 13:43:45 +0800</lastBuildDate>
+    <atom:link href="http://localhost:32779/tags/homepage/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Main Sections</title>
+      <link>http://localhost:32779/docs/mainsections/</link>
+      <pubDate>Sat, 18 Jan 2025 13:43:45 +0800</pubDate>
+      <guid>http://localhost:32779/docs/mainsections/</guid>
+      <description>&lt;p&gt;Only &lt;a href=&#34;https://gohugo.io/methods/site/mainsections/&#34; title=&#34;mainSections - Hugo&#34;&gt;main sections&lt;/a&gt; are displayed on home page, please check &lt;a href=&#34;https://gohugo.io/methods/site/mainsections/&#34; title=&#34;mainSections - Hugo&#34;&gt;Hugo&amp;rsquo;s document, mainSections&lt;/a&gt; to get more information.&lt;/p&gt;&#xA;&lt;div class=&#34;island mb-4 overflow-hidden not-prose&#34;&gt;&#xA;    &#xA;    &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# hugo.toml&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;mainSections&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;posts&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;docs&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>

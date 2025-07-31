@@ -1,0 +1,9 @@
+node_modules/
+exampleSite/public/
+exampleSite/resources/
+exampleSite/ebug/
+public/
+resources/
+.hugo_build.lock
+exampleSite/content/t/
+.DS_Store

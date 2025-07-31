@@ -1,0 +1,95 @@
+baseURL = 'http://localhost:1313/'
+languageCode = 'en-us'
+title = '🛡️ Dragon Shell'
+theme = 'hugo-theme-island'
+summaryLength = 128
+
+defaultContentLanguage = "en"
+
+[languages]
+  [languages.en]
+    languageCode = "en"
+    languageName = "English"
+    weight = 0
+    title = "🛡️ Dragon Shell"
+    [languages.en.params]
+      dateFormat = "Jan 02, 2006"
+      description = "Insights and analyses on cybersecurity."
+
+  [languages.pt]
+    languageCode = "pt"
+    languageName = "Portuguese (Brazil)"
+    weight = 10
+    title = "🛡️ Dragon Shell"
+    [languages.pt.params]
+      dateFormat = "02/01/2006"
+      description = "Análises e insights sobre cibersegurança."
+
+[pagination]
+  disableAliases = false
+  pagerSize = 5
+  path = "page"
+
+[permalinks]
+  authors = "/u/:slug/"
+
+[Taxonomies]
+  tag = "tags"
+  category = "categories"
+  author = "authors"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      wrapStandAloneImageWithinParagraph = false
+      [markup.goldmark.parser.attribute]
+        block = true
+    [markup.highlight]
+      style = "github"
+      noClasses = false
+
+# Menus (DESCOMENTE e ajuste para usar)
+# [menus]
+#   [[menus.main]]
+#     identifier = "menu.home"
+#     name = "Home"
+#     pageRef = "/"
+#     weight = 10
+#     [menus.main.params]
+#       icon = "home"
+#   [[menus.main]]
+#     identifier = "menu.posts"
+#     name = "Posts"
+#     pageRef = "/posts" # Ajuste o pageRef se seus posts estiverem em outra seção
+#     weight = 20
+#     [menus.main.params]
+#       icon = "pencil-square" # Exemplo de ícone
+#   [[menus.main]]
+#     identifier = "menu.about"
+#     name = "About"
+#     pageRef = "/about"
+#     weight = 30
+#     [menus.main.params]
+#       icon = "info-circle" # Exemplo de ícone
+#   [[menus.main]]
+#     identifier = "menu.tags"
+#     name = "Tags"
+#     pageRef = "/tags"
+#     weight = 40
+#     [menus.main.params]
+#       icon = "tag"
+#   [[menus.main]]
+#     identifier = "menu.authors"
+#     name = "Authors"
+#     pageRef = "/authors"
+#     weight = 50
+#     [menus.main.params]
+#       icon = "user-circle"
+#   [[menus.main]]
+#     identifier = "menu.github"
+#     name = "GitHub"
+#     url = "https://github.com/rxluk" # Substitua pelo seu perfil GitHub
+#     weight = 60
+#     [menus.main.params]
+#       icon = "github" # Exemplo de ícone (assumindo que o tema tem suporte a ícones populares como Font Awesome ou Heroicons)
+#       external = true # Abre em nova aba
