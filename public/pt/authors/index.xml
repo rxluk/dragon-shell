@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Autores on 🛡️ Dragon Shell</title>
-    <link>http://localhost:32779/pt/authors/</link>
+    <link>http://localhost:1313/dragon-shell/pt/authors/</link>
     <description>Recent content in Autores on 🛡️ Dragon Shell</description>
     <generator>Hugo</generator>
     <language>pt</language>
     <lastBuildDate>Fri, 10 Jan 2025 15:17:47 +0800</lastBuildDate>
-    <atom:link href="http://localhost:32779/pt/authors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/dragon-shell/pt/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>乙</title>
-      <link>http://localhost:32779/pt/u/%E4%B9%99/</link>
+      <link>http://localhost:1313/dragon-shell/pt/u/%E4%B9%99/</link>
       <pubDate>Fri, 10 Jan 2025 15:17:47 +0800</pubDate>
-      <guid>http://localhost:32779/pt/u/%E4%B9%99/</guid>
+      <guid>http://localhost:1313/dragon-shell/pt/u/%E4%B9%99/</guid>
       <description></description>
     </item>
     <item>
       <title>甲</title>
-      <link>http://localhost:32779/pt/u/%E7%94%B2/</link>
+      <link>http://localhost:1313/dragon-shell/pt/u/%E7%94%B2/</link>
       <pubDate>Fri, 10 Jan 2025 15:17:47 +0800</pubDate>
-      <guid>http://localhost:32779/pt/u/%E7%94%B2/</guid>
+      <guid>http://localhost:1313/dragon-shell/pt/u/%E7%94%B2/</guid>
       <description>&lt;p&gt;Alice id sed velit vitae ex tristique mattis. Integer venenatis volutpat lectus nec pellentesque. Etiam tincidunt tellus sit amet nunc molestie, ut feugiat elit vehicula. Praesent porttitor mollis elit, vel maximus turpis venenatis sit amet.&lt;/p&gt;</description>
     </item>
   </channel>

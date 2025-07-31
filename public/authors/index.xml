@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on 🛡️ Dragon Shell</title>
-    <link>http://localhost:32779/authors/</link>
+    <link>http://localhost:1313/dragon-shell/authors/</link>
     <description>Recent content in Authors on 🛡️ Dragon Shell</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 10 Jan 2025 15:17:55 +0800</lastBuildDate>
-    <atom:link href="http://localhost:32779/authors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/dragon-shell/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bob</title>
-      <link>http://localhost:32779/u/bob/</link>
+      <link>http://localhost:1313/dragon-shell/u/bob/</link>
       <pubDate>Fri, 10 Jan 2025 15:17:55 +0800</pubDate>
-      <guid>http://localhost:32779/u/bob/</guid>
+      <guid>http://localhost:1313/dragon-shell/u/bob/</guid>
       <description></description>
     </item>
     <item>
       <title>Alice</title>
-      <link>http://localhost:32779/u/alice/</link>
+      <link>http://localhost:1313/dragon-shell/u/alice/</link>
       <pubDate>Fri, 10 Jan 2025 15:17:47 +0800</pubDate>
-      <guid>http://localhost:32779/u/alice/</guid>
+      <guid>http://localhost:1313/dragon-shell/u/alice/</guid>
       <description>&lt;p&gt;Alice id sed velit vitae ex tristique mattis. Integer venenatis volutpat lectus nec pellentesque. Etiam tincidunt tellus sit amet nunc molestie, ut feugiat elit vehicula. Praesent porttitor mollis elit, vel maximus turpis venenatis sit amet.&lt;/p&gt;</description>
     </item>
   </channel>
