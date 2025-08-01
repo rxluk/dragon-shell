@@ -5,5 +5,5 @@ title: 'Autores'
 slug: "u"
 icon: "user-circle"
 cover:
-    image: island-cover-authors-pt.png
+    image: authors-pt.png
 ---

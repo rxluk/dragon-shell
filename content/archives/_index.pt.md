@@ -4,5 +4,5 @@ draft: false
 title: 'Arquivos'
 icon: "archive-box"
 cover:
-    image: island-cover-archives-pt.png
+    image: archives-pt.png
 ---
