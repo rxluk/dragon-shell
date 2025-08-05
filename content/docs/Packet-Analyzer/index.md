@@ -1,120 +1,186 @@
 ---
-title: 'Packet Analysis'
+title: "Supreme Packet Analysis: From tcpdump to Wireshark"
 description: >
-  Uncovering Network Traffic and Understanding Every Packet on Your Network.
-date: '2025-08-05T16:00:00-03:00'
+  Master packet analysis with this complete guide — learn everything about headers, payloads, tcpdump, Wireshark, and encrypted protocols.
+date: 2025-08-05T16:00:00-03:00
 draft: false
 tags:
   - networking
-  - protocols
-  - packet-analysis
   - tcpdump
+  - wireshark
+  - packet-analysis
+  - protocols
 categories:
   - docs
 authors:
   - luk
 cover:
-  image: pattern.png
+  image: network-capture.png
 ---
 
-# Packet Analysis: Uncovering Network Traffic
+# 🧠 Supreme Packet Analysis: From tcpdump to Wireshark
 
-In our **General Guide to Networking**, we explored the theory behind the protocols that make the internet work.  
-But what if I told you it’s possible to go beyond theory and actually see the conversations happening on your network?
+In our **General Networking Guide**, we explored the fundamentals of protocols. Now it's time to go deeper. We're going to **observe, read, and understand the packets** that travel through your network.
 
-That’s exactly what we’re doing here. This post is a deep dive into the art of reading network traffic.
-
-We'll use tools like `tcpdump` to break down what each line means, understand every part of a packet, and most importantly, figure out **what we can and can’t see**.
-
-By the end, you'll be able to speak the "language" of the network and analyze packets like a pro.
+This guide is the most comprehensive you'll find: **tcpdump, Wireshark, headers, payloads, encryption, protocols, best practices — all explained in clear English.**
 
 ---
 
-## The Anatomy of a Packet
+## 📦 Anatomy of a Network Packet
 
-Before we dive into `tcpdump` output, let’s break down the basic structure of a network packet.
+A packet is like a letter:
 
-Think of a packet like a letter:
+- **Header**: contains addresses, control info, and metadata.
+- **Payload**: the content — message, page, file.
 
-- **Header**: The envelope. It contains important routing info like source/destination addresses and the type of data.
-- **Payload**: The actual message inside the envelope — the data your app is trying to send (a web page, a video chunk, a message, etc).
+OSI Model layers involved:
 
-Our goal is to learn how to read both the **envelope** and, when possible, the **content** of these packets.
+- **Layer 2 (Data Link)**: MACs, Ethernet.
+- **Layer 3 (Network)**: IPs, TTL, fragmentation.
+- **Layer 4 (Transport)**: TCP/UDP, ports, flags.
+- **Layer 7 (Application)**: HTTP, DNS, etc.
 
 ---
 
-## Decoding `tcpdump` Output
+## ⚙️ Capture and Analysis Tools
 
-`tcpdump` is a powerful command-line tool to capture and analyze network traffic.
-
-Let’s dissect a real example:
+### 1. `tcpdump` (command-line)
 ```bash
-15:57:09.259316 IP 172.31.40.200.60262 > 13.107.246.33.https: Flags [.], ack 2954965298, win 501, length 0
+sudo tcpdump -i eth0 -n -vv
 ```
 
-**Breakdown:**
+- `-i eth0`: Interface to monitor.
+- `-n`: Don’t resolve names (faster).
+- `-vv`: Verbosity (more detail).
 
-- `15:57:09.259316`: Timestamp when the packet was captured.
-- `IP`: Protocol used — in this case, IPv4.
-- `172.31.40.200.60262`: Source IP and port.
-- `>`: Traffic direction — from source to destination.
-- `13.107.246.33.https`: Destination IP and port (443 translated as `https`).
-- `Flags [.]`: TCP flags — in this case, just ACK.
-- `ack 2954965298`: Acknowledgment number — tells which byte the receiver expects next.
-- `win 501`: Receive window — how much data the receiver can accept before sending another ACK.
-- `length 0`: No payload — this is a control-only packet.
+### 2. Wireshark (GUI)
+
+- Allows visual filters, flow reconstruction, protocol statistics.
+- Ideal for those who want to "see" the traffic visually.
 
 ---
 
-## Example: DNS Query
+## 🧾 Reading tcpdump Output
 
-Here’s another example, this time with DNS:
+Example:
 ```bash
-15:57:09.319786 IP 172.31.40.200.45821 > rxluk.home.net.domain: 37311+ PTR? 33.246.107.13.in-addr.arpa. (44)
+15:57:09.259316 IP 192.168.0.2.60262 > 142.250.184.206.https: Flags [.], ack 123456789, win 501, length 0
 ```
 
-**Breakdown:**
+Breakdown:
 
-- `rxluk.home.net.domain`: Destination resolved DNS name (port 53).
-- `37311+`: DNS query ID with recursion requested (`+`).
-- `PTR?`: Reverse DNS lookup (finding a hostname from an IP).
-- `33.246.107.13.in-addr.arpa.`: Format used for reverse lookups.
-- `(44)`: Total size of the query in bytes.
-
----
-
-## Can You Read the Packet? Understanding Encryption
-
-**What you can see depends on the protocol.**
-
-### **Unencrypted Protocols** (HTTP, FTP):
-- Full content is visible.
-- Sensitive info like passwords and form data can be read by anyone on the same network.
-- That’s why they’re considered insecure.
-
-### **Encrypted Protocols** (HTTPS, SSH):
-- You only see headers (source/destination IPs, ports, packet size).
-- The payload (real content) is **unreadable** without the decryption key.
-
-Understanding this difference is **crucial** for knowing when your data is safe.
+- **Timestamp**: 15:57:09.259316
+- **Protocol**: IP (IPv4)
+- **Source**: 192.168.0.2:60262
+- **Destination**: 142.250.184.206:443 (https)
+- **Flags**: ACK (`.`)
+- **ack**: Acknowledgment number
+- **win**: Window size
+- **length**: Payload size (0 = control only)
 
 ---
 
-## Recommended Practice
+## 🏷️ Common TCP Flags
 
-The best way to learn is by **doing**:
+- `[S]`: SYN – connection start
+- `[.]`: ACK – acknowledgment
+- `[P]`: PSH – push (send immediately)
+- `[F]`: FIN – finish/close connection
+- `[R]`: RST – reset
+- `[U]`: URG – urgent data
 
-- Use **Wireshark** (GUI) or `tcpdump` (CLI).
-- Capture a **TCP handshake** (SYN, SYN-ACK, ACK).
-- Observe a **DNS query** happening live.
-- Compare **HTTP vs HTTPS** packets to see encryption in action.
+---
+
+## 🌐 Example: DNS Packet
+
+```bash
+15:57:09.319786 IP 192.168.0.2.45821 > dns.google.domain: 37311+ PTR? 206.184.250.142.in-addr.arpa. (44)
+```
+
+- **PTR?**: Reverse DNS lookup
+- **37311+**: DNS request ID with recursion enabled
+- **dns.google.domain**: DNS server on port 53
+- **(44)**: total query size
 
 ---
 
-## Final Thoughts
+## 🔐 What Can You See?
 
-Understanding network protocols and learning how to read network traffic is like **learning the language of the internet**.
+### Without Encryption (HTTP, FTP):
+- Readable headers and payloads
+- Passwords, commands, pages
 
-With this guide, you’ve got the tools to begin real-world packet analysis. The rest is practice.
+### With Encryption (HTTPS, SSH):
+- Only headers visible
+- Encrypted payload (unreadable)
+
+**TIP:** You can still see:
+- IPs and ports
+- Data volume
+- Timing and patterns
 
 ---
+
+## 🕵️‍♂️ tcpdump Filter Tips
+
+- Capture only HTTP traffic:
+  ```bash
+  tcpdump -i eth0 port 80
+  ```
+- Capture traffic from a single IP:
+  ```bash
+  tcpdump host 192.168.0.5
+  ```
+- Capture only DNS traffic:
+  ```bash
+  tcpdump port 53
+  ```
+
+---
+
+## 🎨 Wireshark: Visual Tips
+
+- Use **display filters**:
+  - `http`, `dns`, `tcp.port == 443`
+- Right-click a packet → **Follow → TCP Stream**
+- Visualize handshakes, full sessions, SSL, TLS
+- **Statistics → Protocol Hierarchy**: see all protocol activity
+
+---
+
+## 🧪 Practice: Real Exercises
+
+1. Capture a full TCP handshake
+2. Visit an HTTP site and view contents in Wireshark
+3. Observe live DNS traffic
+4. Use filters to separate traffic by IP or protocol
+5. Compare HTTP and HTTPS packets
+
+---
+
+## 🧰 Common Observable Protocols
+
+- **HTTP**: Fully visible (if not HTTPS)
+- **HTTPS**: Only headers (encrypted)
+- **DNS**: Visible, except DNS-over-HTTPS
+- **SSH**: Only IPs/ports visible
+- **SMTP**: Often in plain text (no TLS)
+- **FTP**: Plain text, vulnerable
+
+---
+
+## 🧠 Conclusion
+
+Packet analysis is **reading the language of the internet**. Tools like `tcpdump` and Wireshark are essential for anyone working with networks, security, or wanting to understand what happens under the hood.
+
+With this guide, you're ready to:
+- Read packets fluently
+- Differentiate secure vs insecure traffic
+- Identify network issues
+- Perform basic security audits
+
+Now it’s time to **observe real traffic**, filter, interpret, and become a true network analyst.
+
+---
+
+**🚀 Happy analyzing!**
