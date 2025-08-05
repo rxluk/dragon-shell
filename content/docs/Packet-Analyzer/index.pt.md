@@ -15,7 +15,7 @@ categories:
 authors:
   - luk
 cover:
-  image: network-capture.png
+  image: pattern.png
 ---
 
 # 🧠 Análise Suprema de Pacotes: Do tcpdump ao Wireshark

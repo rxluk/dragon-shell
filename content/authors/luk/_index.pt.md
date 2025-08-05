@@ -19,7 +19,7 @@ description: |
     * 💻 Java / Spring Boot.
     * 🐘 PHP / Laravel.
     * 🐧 Linux (scripts bash, automação).
-    * 🐍 Python (ferramentas de segurança.
+    * 🐍 Python (ferramentas de segurança).
 
     .
 
